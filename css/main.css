@@ -1,0 +1,38 @@
+body.modal-open {
+    width: 100% !important;
+    padding-right: 0 !important;
+    overflow-y: scroll !important;
+}
+
+.carousel-inner {
+    margin-top: 4.5%;
+}
+
+
+
+a {
+    opacity: 1;
+}
+
+
+
+.image {
+    display: block;
+    margin: auto;
+}
+
+
+
+
+
+.image-1 {
+    display: block;
+}
+
+li {
+    list-style: none;
+}
+
+.fa-check-circle-o {
+    margin-right: 1%;
+}
