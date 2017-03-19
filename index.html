@@ -16,42 +16,46 @@
       <link href="css/main.css" rel="stylesheet">
       <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.css">
   </head>
-  <body id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
+  <body data-spy="scroll" data-target="#navbar-example" id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
       
     <!--Nav-->
-      <nav class="navbar navbar-toggleable-md navbar-inverse bg-primary fixed-top bg-faded">
+      <nav class="navbar navbar-toggleable-md navbar-inverse bg-danger fixed-top bg-faded">
     <div class="container">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <div id="navbar-example" class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#main">Главная <span class="sr-only">(current)</span></a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#about">О нас <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">О нас</a>
+            <a class="nav-link" href="#speakers" >Наши преподователи</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"> Цены</a>
-          </li>
+          
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Наши услуги
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Индивидуальное обучение</a>
-              <a class="dropdown-item" href="#">Английский для детей</a>
-                <a class="dropdown-item" href="#">Английский для взрослых</a>
-              <a class="dropdown-item" href="#">Корпоративное обучение</a>                
-                <a class="dropdown-item" href="#">Skype-обучение</a>
-                <a class="dropdown-item" href="#">Разговорный клуб с носителем</a>
-                <a class="dropdown-item" href="#">Перевод</a>
+            <div  class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#ind">Индивидуальное обучение</a>
+              <a class="dropdown-item" href="#child">Английский для детей</a>
+                <a class="dropdown-item" href="#group">Английский для взрослых</a>
+              <a class="dropdown-item" href="#corp">Корпоративное обучение</a>                
+                <a class="dropdown-item" href="#skyp">Skype-обучение</a>
+                <a class="dropdown-item" href="#clubs">Разговорный клуб с носителем</a>
+                <a class="dropdown-item" href="#trans">Перевод</a>
             </div>              
           </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#feedback"> Отзывы</a>
+          </li>
          <li class="nav-item">
-            <a class="nav-link" href="#"> Контакты</a>
+            <a class="nav-link" href="#contact"> Контакты</a>
           </li>
         </ul>
           
@@ -61,22 +65,22 @@
       </nav>
 <!--/Nav-->
            <!---Slider-->      
-       <div class="jumbotron">
-  <h1 class="display-3">Hello, world!</h1>
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-  <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  <p class="lead">
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-  </p>
-</div>
+        <div id="main" class="jumbotron">
+          <h1 class="display-3">Hello, world!</h1>
+          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+          <hr class="my-4">
+          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+          <p class="lead">
+            <a class="btn btn-danger btn-lg" href="#" role="button">Learn more</a>
+          </p>
+      </div>
 
 <!---/Slider-->
         
     <div class="container ">
-        <div id="about"  class="row">
+        <div   class="row">
             
-                <h1 class="my-4 display-6 mx-auto ">Студия иностранных языков "DIalogue":</h1>
+                <h1 id="about" class="my-4 display-6 mx-auto ">Студия иностранных языков "DIalogue":</h1>
                 <ul>
                     <li class="lead"><i class="fa fa-check-circle-o" aria-hidden="true"></i>Основана в октябре 2013 года.</li>
                     <li class="lead"><i class="fa fa-check-circle-o" aria-hidden="true"></i>В основе обучения лежит инновационная коммуникативная методика.</li>
@@ -90,7 +94,7 @@
     <!-- About -->
           
     <!-- Speakers -->
-        <h2 id="speakers" class="display-5 text-center my-5 ">Наши преподаватели</h2>
+        <h2 id="speakers" class="display-5 text-center my-5">Наши преподаватели</h2>
         <div class="row">
             <div class="col-md-6 col-lg-4 my-2">
                 <div class="card teacher">
@@ -99,7 +103,7 @@
                     <h4 class="card-title">Ксения Рыськова</h4>
                     <p class="card-text"><strong>Генеральный директор</strong></p>
 				    <p class="card-text"><strong>Опыт преподавания :</strong> с 2008, преподаватель английского и итальянского языков, старший преподаватель, руководитель центра сдачи международного экзамена  PTE (Pearson test  of  English)</p>
-                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#ksenia">Подробнее</button>
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#ksenia">Подробнее</button>
                   </div>
                 </div>
             </div>     
@@ -110,7 +114,7 @@
                     <h4 class="card-title">Елена Плескач </h4>
 				    <p class="card-text"><strong>Директор по обучению</strong></p>
 				    <p class="card-text"><strong>Опыт преподавания :</strong> с 2009, преподаватель английского и немецкого языков, диплом с отличием. Является автором методической разработки, посвященной развитию коммуникативных навыков,</p>
-                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#lena">Подробнее</button>
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#lena">Подробнее</button>
                   </div>
                 </div>
             </div>    
@@ -121,7 +125,7 @@
                     <h4 class="card-title">Марина Москвичева</h4>
 				    <p class="card-text"><strong>Преподаватель</strong></p>
 				    <p class="card-text"><strong>Опыт преподавания :</strong> с 2011, окончила Челябинский Государственный Педагогический Университет  - Магистр педагогических наук «Теория и практика преподавания иностранных языков в вузе», диплом с отличием. </p>
-                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#marina">Подробнее</button>
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#marina">Подробнее</button>
                   </div>
                 </div>
             </div>    
@@ -132,7 +136,7 @@
                     <h4 class="card-title">Евгения Аркан</h4>
 			        <p class="card-text"><strong>Преподаватель</strong></p>
 				    <p class="card-text"><strong>Опыт преподавания :</strong> с 2014 (Business English), окончила Челябинский Государственный  Университет  - факультет лингвистики и перевода. </p>
-                      <button type="button" class="btn btn-info" data-toggle="modal" data-target="#arkan">Подробнее</button>
+                      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#arkan">Подробнее</button>
                   </div>
                 </div>
             </div>    
@@ -143,7 +147,7 @@
                     <h4 class="card-title">Валерия Либельт</h4>
 			        <p class="card-text"><strong>Преподаватель</strong></p>
 				    <p class="card-text"><strong>Опыт преподавания :</strong> с 2015, окончила Челябинский Государственный  Университет  - факультет лингвистики и перевода. </p>
-                      <button type="button" class="btn btn-info" data-toggle="modal" data-target="#libelt">Подробнее</button>
+                      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#libelt">Подробнее</button>
                   </div>
                 </div>
             </div>    
@@ -154,39 +158,39 @@
                     <h4 class="card-title">Алена Серюкова</h4>
 			        <p class="card-text"><strong>Преподаватель</strong></p>
 				    <p class="card-text"><strong>Опыт преподавания :</strong> с 2015, окончила Южно-Уральский Государственный университет  - факультет международных отношений </p>
-                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#alena">Подробнее</button>
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#alena">Подробнее</button>
                   </div>
                 </div>
             </div>    
         </div>
         <!-- /speakers -->
         <!-- Servis-->
-        <h2 id="servis" class="display-5 text-center my-5 ">Наши услуги</h2>
+        <h2  class="display-5 text-center my-5 ">Наши услуги</h2>
             <div class="row">
-                <div class="col-md-6"><img class="img-fluid rounded" src="img/individ.jpg"></div>
+                <div class="col-md-6" ><img class="img-fluid rounded" src="img/individ.jpg"></div>
                 <div class="col-md-6">
-                    <h4>Индивидуальное обучение</h4>
+                    <h4 id="ind">Индивидуальное обучение</h4>
                 <p>Индивидуальное обучение идеально подходит в тех случаях, когда вам необходимо закрыть определенные задачи в изучении языка. Такими задачами могут быть: устранение пробелов в знаниях английского, подготовка к экзаменам или собеседованию, специфическая тематика изучения и так далее. Заниматься один на один с преподавателем стоит, когда у вас нет возможности посещать занятия в строго обозначенное расписание группы.</p> 
                 <p>Также, индивидуальное изучение английского языка оценят те студенты, которым важны персональный подход, достижение конкретного результата и комфортные условия обучения.</p> 
-                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#individ">Узнать больше</button>
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#individ">Узнать больше</button>
                               
                 </div>
             </div>
         <hr class="my-4">
-        <div class="row">
+        <div class="row" id="child" >
             <div class="col-md-6 push-md-6">
                 <img class="img-fluid rounded" src="img/child.jpg">
             </div>
             <div class="col-md-6 pull-md-6"> 
-                <h4>Английский для детей</h4>
+                <h4 >Английский для детей</h4>
                 <p>Индивидуальное обучение идеально подходит в тех случаях, когда вам необходимо закрыть определенные задачи в изучении языка. Такими задачами могут быть: устранение пробелов в знаниях английского, подготовка к экзаменам или собеседованию, специфическая тематика изучения и так далее. Заниматься один на один с преподавателем стоит, когда у вас нет возможности посещать занятия в строго обозначенное расписание группы.</p> 
                 <p>Также, индивидуальное изучение английского языка оценят те студенты, которым важны персональный подход, достижение конкретного результата и комфортные условия обучения.</p> 
-                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#individ">Узнать больше</button>
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#individ">Узнать больше</button>
             </div>
             
         </div>
         <hr class="my-4">
-        <div class="row">
+        <div class="row" id="group" >
             <div class="col-md-6"> 
                 <img class="img-fluid rounded" src="img/students.jpg">                
             </div>
@@ -196,11 +200,11 @@
                 <p>Интерактивные уроки и преподаватели позволяют достичь результата в кратчайшие сроки даже у тех, кто только начинает изучение английского.</p> 
                 <p><strong>РЕЗУЛЬТАТЫ ОБУЧЕНИЯ: </strong>- Выучите грамматику английского языка - Сможете свободно писать и читать на английском - Научитесь уверенно говорить с носителями языка - Сможете сдавать международные экзамены </p>
                               
-                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#students">Узнать больше</button>
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#students">Узнать больше</button>
             </div>
         </div>
         <hr class="my-4">
-        <div class="row">
+        <div class="row" id="corp">
             <div class="col-md-6 push-md-6">
                 <img class="img-fluid rounded" src="img/corp-2.jpg">
                 
@@ -211,12 +215,12 @@
                 <p>Интерактивные уроки и преподаватели позволяют достичь результата в кратчайшие сроки даже у тех, кто только начинает изучение английского.</p> 
                 <p><strong>РЕЗУЛЬТАТЫ ОБУЧЕНИЯ: </strong>- Выучите грамматику английского языка - Сможете свободно писать и читать на английском - Научитесь уверенно говорить с носителями языка - Сможете сдавать международные экзамены </p>
                               
-                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#corp">Узнать больше</button>              
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#corp">Узнать больше</button>              
             </div>
             
         </div>
         <hr class="my-4">
-        <div class="row">
+        <div class="row" id="skyp">
             <div class="col-md-6"> 
                 <img class="img-fluid rounded" src="img/skype.jpg">                
             </div>
@@ -226,11 +230,11 @@
                 <p>Обучение по Skype позволяет подобрать профессионального преподавателя практически из любой сферы деятельности и с любой точки земного шара. </p>
                 <p>Если у вас нет времени на поездки в школу, или вас интересует изучение английского в специализированной области, английский язык по skype - это самое лучшее решение!</p> 
                                
-                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#skype">Узнать больше</button>
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#skype">Узнать больше</button>
             </div>
         </div>
         <hr class="my-4">
-        <div class="row">
+        <div class="row" id="clubs">
              <div class="col-md-6 push-md-6">
                 <img class="img-fluid rounded" src="img/club.jpg">
                 
@@ -243,12 +247,12 @@
                 <p>Занимаясь с носителями языка, вы приучаете свой слух к живой иностранной речи, усваиваете грамотные речевые обороты и верное английское произношение. А в компании таких же изучающих английский язык студентов, вы окунетесь в настоящую языковую среду, избавитесь от страха общения, увеличите словарный запас и получите море положительных эмоций от общения на иностранном языке! </p>
                 
                               
-                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#club">Узнать больше</button>              
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#club">Узнать больше</button>              
             </div>
            
         </div>
         <hr class="my-4">
-        <div class="row">
+        <div class="row" id="transl">
             <div class="col-md-6"> 
                 <img class="img-fluid rounded" src="img/translate.jpg">                
             </div>
@@ -258,15 +262,58 @@
                 <p>Обучение по Skype позволяет подобрать профессионального преподавателя практически из любой сферы деятельности и с любой точки земного шара. </p>
                 <p>Если у вас нет времени на поездки в школу, или вас интересует изучение английского в специализированной области, английский язык по skype - это самое лучшее решение!</p> 
                                
-                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#translate">Узнать больше</button>
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#translate">Узнать больше</button>
             </div>
         </div>
         <!-- /Servis-->
+        <!--Feedback-->
+        <h2 id="feedback" class="display-5 text-center my-5 ">Отзывы</h2>
+        <div class="row">
+        <ul class="list-unstyled">
+          <li class="media">
+            
+            <div class="media-body">
+              <h4 class="my-2 mb-1">Harmen, The Netherlands</h4>
+              <p>The class attended leaded by Ksenia was interesting, fun and interactive! She got the students talking English to me really quickly and we had some interesting conversations about the differences between the Netherlands and Russia.</p>
+                <p>I wish I could have attended more classes and see more of her teaching, but unfortunately there was no time for me. Anyway thank you Ksenia, it was great meeting you!</p>                
+                <p>Harmen van den Berg <br>
+                The Netherlands</p>
+            </div>
+          </li>
+            <hr>
+            
+          <li class="media my-4">
+            
+            <div class="media-body">
+              <h4 class="my-2 mb-1">Nicole Kuhn, Brazil</h4>
+              <p>This school is amazing! Teachers are great, focused and determined to help their students. I recommend it to everyone willing to learn in a nice atmosphere with awesome staff and effective teaching methods!</p>
+            </div>
+          </li>
+            <hr>
+          <li class="media">
+            
+            <div class="media-body">
+              <h4 class="my-2 mb-1">Светлана</h4>
+              <p>   На уроках в «Диалоге» я отдыхаю душой. Помимо пользы от занятий, получаю море удовольствия. Ведь даже если прихожу туда в плохом настроении, ухожу домой с улыбкой! А все благодаря приветливому, позитивному преподавателю Ксении Андреевне!
+                </p><p>Занятия очень интересные, учебная литература расширяет кругозор, игры бодрят. А результаты не заставляют себя ждать – оглянуться не успела, как выросла с pre-intermediate до advanced!</p>
+            </div>
+          </li>
+            <hr>
+            <li class="media">
+            
+            <div class="media-body">
+              <h4 class="my-2 mb-1">Вадим</h4>
+              <p>  Как приятно не учить язык, а овладевать им. Именно такой подход в Диалоге! Очень нравится, что обучение направлено на реальное использование языка, а не на заучивание теории. Скучных уроков не бывает!</p>
+            </div>
+          </li>
+        </ul>
+        </div>
+        <!--/Feedback-->
         <!-- Contact-->
-        <h2 class="display-5 text-center my-5 ">Контакты</h2>
+        <h2 id="contact" class="display-5 text-center my-5 ">Контакты</h2>
         <div class="row my-3">
             <div class="col-md-7"> 
-                <iframe src="https://www.google.com/maps/d/embed?mid=1OHWl-CxHkdjhAsmgMLEdleycQ2E&hl=ru" width="640" height="480"></iframe>
+                <iframe src="https://www.google.com/maps/d/embed?mid=1OHWl-CxHkdjhAsmgMLEdleycQ2E&hl=ru" width="100%" height="480"></iframe>
                 
             </div>
            
@@ -278,11 +325,7 @@
             </div>
         </div>
         <!--/Contact-->
-        <!--Feedback-->
         
-            
-        
-        <!--/Feedback-->
         <!-- Register button -->
         <button type="button" class="btn btn-outline-info btn-lg d-block mx-auto my-3" data-toggle="modal" data-target="#register">Register or not!</button>
         <!-- Register button -->
