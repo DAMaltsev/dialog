@@ -58,3 +58,10 @@ li {
     background:#d9534f;
 }
 
+.bg-danger  {
+    background: #f50404 !important;
+}
+
+.btn-danger {
+    background: #f50404 !important;
+}
