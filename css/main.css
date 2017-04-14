@@ -1,5 +1,6 @@
 body {
   position: relative;
+    
 }
 
 
@@ -64,4 +65,35 @@ li {
 
 .btn-danger {
     background: #f50404 !important;
+}
+
+.img {
+    text-align:center;
+}
+
+a:visited {
+    color:white !important;
+}
+
+#main {
+    margin-top: 5%;
+    height: 25em;
+    background-image: url('../img/fon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+   margin-bottom: 5%;   
+}
+
+.lead {
+    position: relative;
+    top:105%;
+}
+
+.foot {
+    text-align: center;
+}
+
+footer {
+    background: lightgrey;
 }
